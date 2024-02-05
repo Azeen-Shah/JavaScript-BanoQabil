@@ -24,9 +24,9 @@ span {
 
 main {
     background-image: url(../images/1.jpg);
-    background-size: cover;
-    height: calc(100vh - 150px);
-    width: 100vw;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +58,21 @@ main {
 .ass a:active {
     background-color: black;
     color: white;
+}
+
+#git a {
+    background-color: black;
+    color: orange;
+}
+
+#git a:hover {
+    background-color: black;
+    color: white;
+}
+
+#git a:active {
+    background-color: black;
+    color: orange;
 }
 
 footer {
