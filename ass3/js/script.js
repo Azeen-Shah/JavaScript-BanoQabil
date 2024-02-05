@@ -122,10 +122,38 @@ function q7() {
 
 // Q8
 function q8() {
+    let temp = +prompt("How many degrees temperature is today?");
 
+    if (temp >= 40) {
+        alert("It is too hot outside.");
+    } else if (temp >= 30) {
+        alert("The Weather today is Normal.");
+    } else if (temp >= 20) {
+        alert("Today’s Weather is cool.");
+    } else if (temp >= 10) {
+        alert("OMG! Today’s weather is so Cool.");
+    }
 }
 
 // Q9
 function q9() {
+    let cal1 = +prompt("Apna koi first number likheen jo ap calculate krwana chahtay hn:");
+    let opp = prompt("Apna koi Operator select kree: (+ , - , / , * , %)");
+    let cal2 = +prompt("Apna koi Second number likheen jo ap calculate krwana chahtay hn:");
 
+    if (opp == "+") {
+        alert(`${cal1} + ${cal2} = ${cal1 + cal2}`);
+    }
+    if (opp == "-") {
+        alert(`${cal1} - ${cal2} = ${cal1 - cal2}`);
+    }
+    if (opp == "/") {
+        alert(`${cal1} / ${cal2} = ${cal1 / cal2}`);
+    }
+    if (opp == "*") {
+        alert(`${cal1} x ${cal2} = ${cal1 * cal2}`);
+    }
+    if (opp == "%") {
+        alert(`${cal1} % ${cal2} = ${cal1 % cal2}`);
+    }
 }
